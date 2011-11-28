@@ -43,6 +43,10 @@
 		<Unit filename="Miscellaneous.cpp" />
 		<Unit filename="Miscellaneous.hpp" />
 		<Unit filename="TileRegister.cpp" />
+		<Unit filename="TileRegister.hpp" />
+		<Unit filename="Tilemap.cpp" />
+		<Unit filename="Tilemap.hpp" />
+		<Unit filename="Vector2D.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

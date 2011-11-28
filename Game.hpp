@@ -4,6 +4,8 @@
 
 #include <SFML/Graphics.hpp>
 
+class Tilemap;
+
 class Game
 {
     private:
@@ -13,6 +15,8 @@ class Game
         sf::VideoMode       _windowVideoMode;
         std::string         _windowTitle;
         bool                _windowFullscreen;
+
+        Tilemap*            _tilemap;
 
     public:
         Game();
