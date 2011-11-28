@@ -60,6 +60,12 @@ void Game::HandleInput()
         {
             _window.Close();
         }
+
+        else if(_event.Type == sf::Event::KeyPressed){
+            if(_event.Key.Code == sf::Key::Escape){
+                _window.Close();
+            }
+        }
     }
 }
 
