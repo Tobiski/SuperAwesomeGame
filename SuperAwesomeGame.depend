@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1322471189 source:c:\users\tobiski\documents\programming\superawesomegame\main.cpp
+	<SFML/Graphics.hpp>
+	"Game.hpp"
+
+1322477295 source:c:\users\tobiski\documents\programming\superawesomegame\game.cpp
+	<SFML/Graphics.hpp>
+	"Game.hpp"
+	"ImageManager.hpp"
+
+1322477317 c:\users\tobiski\documents\programming\superawesomegame\game.hpp
+	<SFML/Graphics.hpp>
+	"ImageManager.hpp"
+
+1322477260 source:c:\users\tobiski\documents\programming\superawesomegame\imagemanager.cpp
+	"ImageManager.hpp"
+
+1322477254 c:\users\tobiski\documents\programming\superawesomegame\imagemanager.hpp
+	<SFML/Graphics.hpp>
+	<map>
+	<iostream>
+
