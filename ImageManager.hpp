@@ -1,3 +1,4 @@
+#pragma once
 #ifndef IMAGEMANAGER_HPP
 #define IMAGEMANAGER_HPP
 
