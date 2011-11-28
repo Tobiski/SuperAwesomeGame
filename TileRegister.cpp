@@ -12,11 +12,7 @@ void TileRegister::Register(int id, TileClass& tileClass){
 }
 
 TileClass& TileRegister::GetRegistered(int id){
-    if(_tiles.count(id) < 1){
-        std::cout << "WARNING: Call for unregistered Tile ID" << std::endl;
-        TileClass temp;
-        return temp;
-    } else {
-        return _tiles[id];
-    }
+    if(_tiles.count(id) < 1){ std::cout << "WARNING: Call for unregistered Tile ID" << std::endl; } //Warning in case the ID doesn't exist yet
+
+    return _tiles[id];
 }

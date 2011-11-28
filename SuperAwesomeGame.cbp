@@ -30,6 +30,9 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
 				</Linker>
 			</Target>
 		</Build>
@@ -43,6 +46,10 @@
 		<Unit filename="Miscellaneous.cpp" />
 		<Unit filename="Miscellaneous.hpp" />
 		<Unit filename="TileRegister.cpp" />
+		<Unit filename="TileRegister.hpp" />
+		<Unit filename="Tilemap.cpp" />
+		<Unit filename="Tilemap.hpp" />
+		<Unit filename="Vector2D.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

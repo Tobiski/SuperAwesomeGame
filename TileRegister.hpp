@@ -22,8 +22,8 @@ struct TileClass{
 class TileRegister
 {
     public:
-        static void                 Register(int id, TileClass& tileClass);
-        static TileClass&           GetRegistered(int id);
+        static void                         Register(int id, TileClass& tileClass);
+        static TileClass&                   GetRegistered(int id);
 
     private:
         static std::map<int, TileClass>    _tiles;
