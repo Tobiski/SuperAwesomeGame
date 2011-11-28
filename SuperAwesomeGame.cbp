@@ -38,6 +38,10 @@
 		</Compiler>
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.hpp" />
+		<Unit filename="ImageManager.cpp" />
+		<Unit filename="ImageManager.hpp" />
+		<Unit filename="Miscellaneous.cpp" />
+		<Unit filename="Miscellaneous.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

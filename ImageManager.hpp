@@ -8,11 +8,12 @@
 class ImageManager
 {
     public:
+        static sf::Image& GetImage(std::string imageDir);
+
+    private:
         ImageManager();
         ~ImageManager();
-        sf::Image& GetImage(std::string imageDir);
-    private:
-        std::map<std::string, sf::Image> _imageContainer;
+        static std::map<std::string, sf::Image> _imageContainer;
 };
 
 #endif
