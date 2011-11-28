@@ -38,7 +38,8 @@ Game::Game()
 
 Game::~Game()
 {
-
+    delete _tilemap;
+    _tilemap = NULL;
 }
 
 void Game::MainLoop()

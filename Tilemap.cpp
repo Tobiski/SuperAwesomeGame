@@ -14,8 +14,8 @@ Tilemap::~Tilemap(){
 }
 
 void Tilemap::Draw(sf::RenderWindow& target) const{
-    sf::Sprite tileSprite;
-    tileSprite.SetImage(ImageManager::GetImage("data/images/tilesheet.png"));
+    static sf::Sprite tileSprite;
+    tileSprite.SetImage(*_tilesheet);
     for(int i = 0; i < _height; i++){
         for (int j = 0; j < _width; j++){
             TileClass& currentTile = TileRegister::GetRegistered(_content[j + (i * _width)].id);

@@ -17,16 +17,14 @@ struct Tile{
 
 //Map
 //Members:
-//
-//
-class Tilemap : private Vector2D<Tile>{
+//Draw(sf::RenderWindow& target)        - draws the tilemap to the screen, pretty much all ther is to say
+//DebugRandomize()                      - debug function, fills the map with random tiles
+class Tilemap : public Vector2D<Tile>{
     public:
         Tilemap(int width, int height, int tileSize);
         ~Tilemap();
 
-        void        GetWidth() const;
-        void        GetHeight() const;
-        void        Draw(sf::RenderWindow& _target) const;
+        void        Draw(sf::RenderWindow& target) const;
         void        DebugRandomize();
 
 
