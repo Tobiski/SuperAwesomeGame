@@ -42,6 +42,7 @@
 		<Unit filename="ImageManager.hpp" />
 		<Unit filename="Miscellaneous.cpp" />
 		<Unit filename="Miscellaneous.hpp" />
+		<Unit filename="TileRegister.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
