@@ -1,11 +1,10 @@
 #include "ImageManager.hpp"
 
+std::map<std::string, sf::Image> ImageManager::_imageContainer;
+
 ImageManager::ImageManager()
 {
-    sf::Image temp;
-    std::string tempName = "test.png";
-    temp.LoadFromFile(tempName);
-    _imageContainer.insert(std::pair<std::string, sf::Image>(tempName, temp));
+
 }
 
 ImageManager::~ImageManager()
