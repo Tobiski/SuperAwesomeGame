@@ -5,8 +5,6 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-typedef sf::Rect<int> TextureCoordinates;
-
 namespace Framework{
 
     //CreateWindow

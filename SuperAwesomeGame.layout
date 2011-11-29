@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Definitions.hpp" open="1" top="0" tabpos="1">
-		<Cursor position="94" topLine="0" />
+	<File name="CryptedFileIO.cpp" open="1" top="0" tabpos="17">
+		<Cursor position="613" topLine="6" />
 	</File>
-	<File name="Game.cpp" open="1" top="1" tabpos="4">
-		<Cursor position="361" topLine="2" />
+	<File name="CryptedFileIO.hpp" open="1" top="1" tabpos="16">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Definitions.hpp" open="1" top="0" tabpos="1">
+		<Cursor position="151" topLine="0" />
+	</File>
+	<File name="Game.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="2145" topLine="14" />
 	</File>
 	<File name="Game.hpp" open="1" top="0" tabpos="3">
 		<Cursor position="82" topLine="0" />
@@ -17,22 +23,22 @@
 		<Cursor position="12" topLine="0" />
 	</File>
 	<File name="Miscellaneous.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="381" topLine="0" />
+		<Cursor position="30" topLine="0" />
 	</File>
 	<File name="Miscellaneous.hpp" open="1" top="0" tabpos="5">
 		<Cursor position="126" topLine="0" />
 	</File>
 	<File name="TileClass.cpp" open="1" top="0" tabpos="15">
-		<Cursor position="177" topLine="0" />
+		<Cursor position="49" topLine="0" />
 	</File>
 	<File name="TileClass.hpp" open="1" top="0" tabpos="14">
-		<Cursor position="201" topLine="0" />
+		<Cursor position="882" topLine="0" />
 	</File>
 	<File name="TileRegister.cpp" open="1" top="0" tabpos="10">
 		<Cursor position="135" topLine="0" />
 	</File>
 	<File name="TileRegister.hpp" open="1" top="0" tabpos="9">
-		<Cursor position="981" topLine="0" />
+		<Cursor position="135" topLine="0" />
 	</File>
 	<File name="Tilemap.cpp" open="1" top="0" tabpos="13">
 		<Cursor position="1005" topLine="0" />
@@ -41,7 +47,7 @@
 		<Cursor position="280" topLine="0" />
 	</File>
 	<File name="Vector2D.hpp" open="1" top="0" tabpos="11">
-		<Cursor position="1197" topLine="6" />
+		<Cursor position="1197" topLine="21" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />

@@ -20,9 +20,6 @@ Game::Game()
     _windowTitle                    = "SuperAwesomeGame";
     _windowFullscreen               = false;
 
-    _tilemap                        = new Tilemap(25, 25, 32);
-    _tilemap                        ->DebugRandomize(); //Debug code once again, delete as soon as we can load levels...
-
     //Little Demo on how the Tile Register Works
     //Registering the tile
     TileRegister::Register(0,  TileClass::New(TextureCoordinates(0, 0, 32, 32)));
@@ -42,7 +39,8 @@ Game::Game()
     TileRegister::Register(14, TileClass::New(TextureCoordinates(192, 32, 224, 64)));
     TileRegister::Register(15, TileClass::New(TextureCoordinates(224, 32, 256, 64)));
 
-    TileClass& temp = TileRegister::GetRegistered(1);
+    _tilemap                        = new Tilemap(25, 25, 32);
+    _tilemap                        ->DebugRandomize(); //Debug code once again, delete as soon as we can load levels...
 
     Framework::InitWindow(&_window, _windowVideoMode, _windowTitle, _windowFullscreen);
 

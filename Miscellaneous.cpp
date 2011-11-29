@@ -1,7 +1,5 @@
 #include "Miscellaneous.hpp"
 
-
-
 void Framework::InitWindow(sf::RenderWindow* window, sf::VideoMode windowVideoMode, std::string windowTitle, bool windowFullscreen){
     if(window->IsOpened()){
         window->Close();

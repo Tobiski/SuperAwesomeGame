@@ -39,6 +39,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="CryptedFileIO.cpp" />
+		<Unit filename="CryptedFileIO.hpp" />
 		<Unit filename="Definitions.hpp" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.hpp" />
