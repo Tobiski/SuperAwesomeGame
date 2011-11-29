@@ -2,6 +2,7 @@
 
 #include "ImageManager.hpp"
 #include "TileRegister.hpp"
+#include "TileClass.hpp"
 
 Tilemap::Tilemap(int width, int height, int tileSize) :
 Vector2D<Tile>(width, height, Tile(0))
@@ -29,7 +30,7 @@ void Tilemap::Draw(sf::RenderWindow& target) const{
 void Tilemap::DebugRandomize(){
     for(int i = 0; i < _height; i++){
         for (int j = 0; j < _width; j++){
-            operator()(j, i).id = rand()%3;
+            operator()(j, i).id = rand()%16;
         }
     }
 }

@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "TileClass.hpp"
+
 std::map<int, TileClass>    TileRegister::_tiles;
 
 void TileRegister::Register(int id, TileClass& tileClass){
