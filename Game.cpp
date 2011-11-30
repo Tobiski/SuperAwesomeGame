@@ -19,17 +19,17 @@ Game::Game()
     _windowFullscreen               = false;
 
     _tilemap                        = new Tilemap(25, 25, 32);
-    _tilemap                        ->DebugRandomize(); //Debug code once again, delete as soon as we can load levels...
+    _tilemap                        ->LoadMap("1.txt");
 
     //Little Demo on how the Tile Register Works
     //Registering the tile
     TileClass temp;
     temp.textureCoordinates = sf::Rect<int>(0, 0, 32, 32);
-    TileRegister::Register(0, temp);
+    TileRegister::Register('0', temp);
     temp.textureCoordinates = sf::Rect<int>(32, 0, 64, 32);
-    TileRegister::Register(1, temp);
+    TileRegister::Register('1', temp);
     temp.textureCoordinates = sf::Rect<int>(64, 0, 96, 32);
-    TileRegister::Register(2, temp);
+    TileRegister::Register('A', temp);
 
     Framework::InitWindow(&_window, _windowVideoMode, _windowTitle, _windowFullscreen);
 

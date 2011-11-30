@@ -18,6 +18,7 @@ sf::Image& ImageManager::GetImage(std::string imageDir)
 {
         sf::Image temp;
         temp.LoadFromFile(imageDir);
+        temp.SetSmooth(false);
         _imageContainer.insert(std::pair<std::string, sf::Image>(imageDir, temp));
     }
     return _imageContainer[imageDir];

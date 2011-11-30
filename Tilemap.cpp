@@ -1,3 +1,5 @@
+#include <fstream>
+
 #include "Tilemap.hpp"
 
 #include "ImageManager.hpp"
@@ -30,6 +32,34 @@ void Tilemap::DebugRandomize(){
     for(int i = 0; i < _height; i++){
         for (int j = 0; j < _width; j++){
             operator()(j, i).id = rand()%3;
+        }
+    }
+}
+
+void Tilemap::LoadMap(std::string level)
+{
+    // modify the currentLevel to hold whole path to the level file
+    char currentLevel[18] = "data/levels/";
+    int j = 12;
+    char* p;
+    p = &level[0];
+    for(int i=0; i < level.size(); i++)
+    {
+        currentLevel[j] = p[i];
+        j++;
+    }
+
+    // load level from pointed file
+    std::ifstream levelfile;
+    levelfile.open(currentLevel);
+    char c;
+
+    for(int i = 0; i < _height; i++)
+    {
+        for(int j = 0; j < _width; j++)
+        {
+            levelfile >> c;
+            operator()(j, i).id = c;
         }
     }
 }
