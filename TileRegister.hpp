@@ -14,11 +14,11 @@ struct TileClass;
 class TileRegister
 {
     public:
-        static void                         Register(char id, TileClass& tileClass);
-        static TileClass&                   GetRegistered(char id);
+        static void                         Register(int id, TileClass& tileClass);
+        static TileClass&                   GetRegistered(int id);
 
     private:
-        static std::map<char, TileClass>    _tiles;
+        static std::map<int, TileClass>    _tiles;
 };
 
 #endif

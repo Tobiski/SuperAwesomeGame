@@ -26,15 +26,9 @@ class Tilemap : public Vector2D<Tile>{
         Tilemap(int width, int height, int tileSize);
         ~Tilemap();
 
-<<<<<<< HEAD
-        void            Draw(sf::RenderWindow& target) const;
         void            DebugRandomize();
         bool            LoadMap(std::string levelName);
-=======
-        void        Draw(sf::RenderWindow& target) const;
-        void        DebugRandomize();
-        void        LoadMap(std::string level);
->>>>>>> 15d9e98ba110c76abcd957f7415aa9d736fb3aea
+        void            Draw(sf::RenderWindow& target) const;
 
 
     private:
