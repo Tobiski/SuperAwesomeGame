@@ -20,6 +20,7 @@ Game::Game()
     _windowTitle                    = "SuperAwesomeGame";
     _windowFullscreen               = false;
 
+<<<<<<< HEAD
     //Little Demo on how the Tile Register Works
     //Registering the tile
     TileRegister::Register(0,  TileClass::New(TextureCoordinates(0, 0, 32, 32)));
@@ -41,6 +42,20 @@ Game::Game()
 
     _tilemap                        = new Tilemap(25, 25, 32);
     _tilemap                        ->LoadMap("maps/map1.map"); //Debug code once again, delete as soon as we can load levels...
+=======
+    _tilemap                        = new Tilemap(25, 25, 32);
+    _tilemap                        ->LoadMap("1.txt");
+
+    //Little Demo on how the Tile Register Works
+    //Registering the tile
+    TileClass temp;
+    temp.textureCoordinates = sf::Rect<int>(0, 0, 32, 32);
+    TileRegister::Register('0', temp);
+    temp.textureCoordinates = sf::Rect<int>(32, 0, 64, 32);
+    TileRegister::Register('1', temp);
+    temp.textureCoordinates = sf::Rect<int>(64, 0, 96, 32);
+    TileRegister::Register('A', temp);
+>>>>>>> 15d9e98ba110c76abcd957f7415aa9d736fb3aea
 
     Framework::InitWindow(&_window, _windowVideoMode, _windowTitle, _windowFullscreen);
 

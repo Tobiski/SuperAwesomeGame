@@ -1,3 +1,5 @@
+#include <fstream>
+
 #include "Tilemap.hpp"
 
 #include "ImageManager.hpp"
@@ -35,6 +37,7 @@ void Tilemap::DebugRandomize(){
     }
 }
 
+<<<<<<< HEAD
 bool Tilemap::LoadMap(std::string levelName){
     _in.open(levelName.c_str(), std::ios::binary);
     if(_in.is_open()){
@@ -53,3 +56,34 @@ bool Tilemap::LoadMap(std::string levelName){
         return false;
     }
 }
+=======
+void Tilemap::LoadMap(std::string level)
+{
+    // modify the currentLevel to hold whole path to the level file
+    char currentLevel[18] = "data/levels/";
+    int j = 12;
+    char* p;
+    p = &level[0];
+    for(int i=0; i < level.size(); i++)
+    {
+        currentLevel[j] = p[i];
+        j++;
+    }
+
+    // load level from pointed file
+    std::ifstream levelfile;
+    levelfile.open(currentLevel);
+    char c;
+
+    for(int i = 0; i < _height; i++)
+    {
+        for(int j = 0; j < _width; j++)
+        {
+            levelfile >> c;
+            operator()(j, i).id = c;
+        }
+    }
+}
+
+
+>>>>>>> 15d9e98ba110c76abcd957f7415aa9d736fb3aea

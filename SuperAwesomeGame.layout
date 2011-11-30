@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="CryptedFileIO.cpp" open="1" top="0" tabpos="17">
 		<Cursor position="613" topLine="6" />
 	</File>
@@ -51,5 +52,42 @@
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
+=======
+	<File name="Game.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="972" topLine="3" />
+	</File>
+	<File name="Game.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="82" topLine="0" />
+	</File>
+	<File name="ImageManager.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="380" topLine="0" />
+	</File>
+	<File name="ImageManager.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="12" topLine="0" />
+	</File>
+	<File name="Miscellaneous.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="372" topLine="0" />
+	</File>
+	<File name="Miscellaneous.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="12" topLine="0" />
+	</File>
+	<File name="TileRegister.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="359" topLine="0" />
+	</File>
+	<File name="TileRegister.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="1099" topLine="0" />
+	</File>
+	<File name="Tilemap.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="1617" topLine="19" />
+	</File>
+	<File name="Tilemap.hpp" open="0" top="0" tabpos="11">
+		<Cursor position="580" topLine="0" />
+	</File>
+	<File name="Vector2D.hpp" open="0" top="0" tabpos="10">
+		<Cursor position="847" topLine="0" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="51" topLine="0" />
+>>>>>>> 15d9e98ba110c76abcd957f7415aa9d736fb3aea
 	</File>
 </CodeBlocks_layout_file>
