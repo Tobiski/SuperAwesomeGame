@@ -40,7 +40,7 @@ Game::Game()
     TileRegister::Register(15, TileClass::New(TextureCoordinates(224, 32, 256, 64)));
 
     _tilemap                        = new Tilemap(25, 25, 32);
-    _tilemap                        ->DebugRandomize(); //Debug code once again, delete as soon as we can load levels...
+    _tilemap                        ->LoadMap("maps/map1.map"); //Debug code once again, delete as soon as we can load levels...
 
     Framework::InitWindow(&_window, _windowVideoMode, _windowTitle, _windowFullscreen);
 

@@ -31,7 +31,7 @@
 	<map>
 	<iostream>
 
-1322579100 source:c:\users\marvin\superawesomegame\game.cpp
+1322674548 source:c:\users\marvin\superawesomegame\game.cpp
 	"Game.hpp"
 	<cstdlib>
 	<time.h>
@@ -42,7 +42,7 @@
 	"Tilemap.hpp"
 	"Definitions.hpp"
 
-1322576805 source:c:\users\marvin\superawesomegame\miscellaneous.cpp
+1322590193 source:c:\users\marvin\superawesomegame\miscellaneous.cpp
 	"Miscellaneous.hpp"
 
 1322590180 c:\users\marvin\superawesomegame\miscellaneous.hpp
@@ -52,7 +52,7 @@
 1322512596 source:c:\users\marvin\superawesomegame\imagemanager.cpp
 	"ImageManager.hpp"
 
-1322576951 source:c:\users\marvin\superawesomegame\tileregister.cpp
+1322675673 source:c:\users\marvin\superawesomegame\tileregister.cpp
 	"TileRegister.hpp"
 	<iostream>
 	"TileClass.hpp"
@@ -61,13 +61,14 @@
 	<SFML/Graphics.hpp>
 	<map>
 
-1322578143 source:c:\users\marvin\superawesomegame\tilemap.cpp
+1322675449 source:c:\users\marvin\superawesomegame\tilemap.cpp
 	"Tilemap.hpp"
 	"ImageManager.hpp"
 	"TileRegister.hpp"
 	"TileClass.hpp"
 
-1322505068 c:\users\marvin\superawesomegame\tilemap.hpp
+1322674464 c:\users\marvin\superawesomegame\tilemap.hpp
+	<fstream>
 	<SFML/Graphics.hpp>
 	"Vector2D.hpp"
 
@@ -84,4 +85,14 @@
 1322578136 source:c:\users\marvin\superawesomegame\tileclass.cpp
 	"TileClass.hpp"
 	<iostream>
+
+1322606739 source:c:\users\marvin\superawesomegame\cryptedfileio.cpp
+	"CryptedFileIO.hpp"
+	<iostream>
+	<cstdlib>
+
+1322606793 c:\users\marvin\superawesomegame\cryptedfileio.hpp
+	<string>
+	<vector>
+	<fstream>
 

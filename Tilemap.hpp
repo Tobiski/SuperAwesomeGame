@@ -2,6 +2,7 @@
 #ifndef TILEMAP_HPP
 #define TILEMAP_HPP
 
+#include <fstream>
 #include <SFML/Graphics.hpp>
 
 #include "Vector2D.hpp"
@@ -24,16 +25,17 @@ class Tilemap : public Vector2D<Tile>{
         Tilemap(int width, int height, int tileSize);
         ~Tilemap();
 
-        void        Draw(sf::RenderWindow& target) const;
-        void        DebugRandomize();
+        void            Draw(sf::RenderWindow& target) const;
+        void            DebugRandomize();
+        bool            LoadMap(std::string levelName);
 
 
     private:
-        Tilemap();
+        std::ifstream   _in;
 
-        int         _tileSize;
+        int             _tileSize;
 
-        sf::Image*  _tilesheet;
+        sf::Image*      _tilesheet;
 };
 
 #endif

@@ -35,4 +35,21 @@ void Tilemap::DebugRandomize(){
     }
 }
 
-
+bool Tilemap::LoadMap(std::string levelName){
+    _in.open(levelName.c_str(), std::ios::binary);
+    if(_in.is_open()){
+        int currentTile;
+        for(int i = 0; i < _height && _in.peek() >= 0; i++){
+            for(int j = 0; j < _width && _in.peek() >= 0; j++){
+                currentTile = _in.peek();
+                std::cout << _in.peek() << std::endl;
+                _in.seekg(_in.tellg() + 1);
+                operator()(j, i).id = currentTile;
+            }
+        }
+        _in.close();
+    } else {
+        std::cout << "WARNING: Failed to load level: '" << levelName << "'" << std::endl;
+        return false;
+    }
+}
